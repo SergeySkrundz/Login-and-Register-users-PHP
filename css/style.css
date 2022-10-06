@@ -1,0 +1,262 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #707070;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-Regular'),
+    url("../fonts/Montserrat-Regular.woff2") format('woff2'),
+    url("../fonts/Montserrat-Regular.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-SemiBold'),
+    url("../fonts/Montserrat-SemiBold.woff2") format('woff2'),
+    url("../fonts/Montserrat-SemiBold.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-Bold'),
+    url("../fonts/Montserrat-Bold.woff2") format('woff2'),
+    url("../fonts/Montserrat-Bold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-ExtraBold'),
+    url("../fonts/Montserrat-ExtraBold.woff2") format('woff2'),
+    url("../fonts/Montserrat-ExtraBold.woff") format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --springgreen: #707070;
+  --black: #000;
+  --white: #fff;
+  --bacground-color: #DCDCDC;
+  --border-form-color: #696969;
+  --border-input-color: #808080;
+  --bacground-btn-color: #228B22;
+  --bacground-btn-hover: #32CD32;
+  --color-error: #ff0000;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid var(--border-input-color);
+  border-radius: 5px;
+}
+
+/* glob */
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 30px 30px;
+}
+
+.btn {
+  margin-top: 10px;
+  background: var(--bacground-btn-color);
+  width: 100%;
+  height: 35px;
+  border-radius: 7px;
+  font-weight: 600;
+  color: var(--white);
+  transition: background 0.25s ease-in-out;
+}
+
+.btn:hover {
+  background: var(--bacground-btn-hover);
+}
+
+/* form login */
+
+.form_login {
+  position: relative;
+  margin: 5% auto;
+  width: 300px;
+  height: 320px;
+  border: 8px solid var(--border-form-color);
+  border-radius: 20px;
+  background: var(--bacground-color);
+  box-shadow: 0 10px 25px 5px var(--black);
+}
+
+.title_3 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.error {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-error);
+}
+
+.log_error_all {
+  position: absolute;
+  top: 25%;
+  max-width: 245px;
+}
+
+.log_error_log {
+  position: absolute;
+  top: 50%;
+}
+
+.log_error_password {
+  position: absolute;
+  top: 71%;
+}
+
+/* form register */
+
+.form_register {
+  position: relative;
+  margin: 5% auto;
+  width: 300px;
+  height: 575px;
+  border: 8px solid var(--border-form-color);
+  border-radius: 20px;
+  background: var(--bacground-color);
+  box-shadow: 0 10px 25px 5px var(--black);
+}
+
+.reg_input {
+  margin-bottom: 29px;
+}
+
+.reg_error_all {
+  position: absolute;
+  top: 14%;
+  max-width: 235px;
+}
+
+.success {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--bacground-btn-color);
+}
+
+.reg_error_log {
+  position: absolute;
+  top: 27%;
+  max-width: 235px;
+}
+
+.reg_error_password {
+  position: absolute;
+  top: 41%;
+  max-width: 235px;
+}
+
+.reg_error_confirm_password {
+  position: absolute;
+  top: 54%;
+  max-width: 235px;
+}
+
+.reg_error_email {
+  position: absolute;
+  top: 68%;
+  max-width: 235px;
+}
+
+.reg_error_username {
+  position: absolute;
+  top: 81%;
+  max-width: 235px;
+}
+
+/* account */
+
+.content {
+  text-align: center;
+}
+
+header {
+  border-bottom: 2px solid var(--white);
+}
+
+.hello {
+  display: inline-block;
+  padding-right: 40px;
+  font-size: 40px;
+  color: var(--white);
+}
+
+.btn_site {
+  padding: 10px 25px;
+  border: 1px solid var(--black);
+}
+
+.page {
+  font-size: 30px;
+  color: var(--bacground-color)
+}
